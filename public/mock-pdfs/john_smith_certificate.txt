@@ -1,0 +1,46 @@
+BLOOD GROUP CERTIFICATE
+=====================
+
+PATIENT INFORMATION
+------------------
+Name: John Smith
+Patient ID: BG2024001
+Date of Birth: March 15, 1992
+Blood Type: O Positive (O+)
+Rh Factor: Positive
+
+TESTING DETAILS
+---------------
+Laboratory: NYC Medical Diagnostic Center
+Address: 123 Health Street, New York, NY 10001
+Test Date: January 12, 2024
+Report Date: January 15, 2024
+
+TECHNICAL RESULTS
+----------------
+ABO Grouping: Group O
+Forward Typing: Anti-A (-), Anti-B (-), Anti-AB (-)
+Reverse Typing: A Cells (+), B Cells (+), O Cells (-)
+Rh Typing: Anti-D (+)
+Antigen Status: D antigen present
+
+QUALITY CONTROL
+---------------
+Controls: Within acceptable limits
+Methods: Automated analyzer with manual confirmation
+Technician: Dr. Michael Reynolds
+Supervisor: Dr. Sarah Johnson, MD
+
+CERTIFICATION
+-------------
+This certifies that the blood group typing for John Smith
+has been performed in accordance with AABB standards and
+confirmed by appropriate quality control measures.
+
+This individual is classified as O Positive blood type
+and is eligible for blood donation.
+
+---
+LifeShare Blood Bank Management System
+Mock Certificate - Demonstration Purposes
+Certificate ID: CERT-BG-2024-001

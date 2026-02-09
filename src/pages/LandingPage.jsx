@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Heart, Droplets, Users, Shield } from "lucide-react";
+import AnimatedBloodFill from "../components/common/AnimatedBloodFill";
 import ThemeLanguageToggle from "../components/common/ThemeLanguageToggle";
 import { useLanguage } from "../contexts/LanguageContext";
 
@@ -156,35 +157,38 @@ const LandingPage = () => {
             className="lg:w-1/2 flex justify-center"
           >
             <div className="relative">
-              <motion.div
-                className="glass-card p-8 rounded-3xl w-full max-w-md"
-                whileHover={{ scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <div className="w-full h-64 bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl flex items-center justify-center">
-                  <div className="text-center">
-                    <Heart className="w-16 h-16 text-red-500 mx-auto mb-4" />
-                    <p className="text-gray-600 font-medium">
-                      LifeShare Dashboard
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
+              {/* Animated Blood Fill Component */}
+              <AnimatedBloodFill />
 
-              {/* Floating elements */}
+              {/* Floating elements around blood container */}
               <motion.div
-                className="absolute -top-4 -left-4 bg-red-500 rounded-full p-3 glass-card"
+                className="absolute -top-8 -left-8 bg-red-500 rounded-full p-3 glass-card"
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
                 <Droplets className="w-6 h-6 text-white" />
               </motion.div>
               <motion.div
-                className="absolute -bottom-4 -right-4 bg-blue-500 rounded-full p-3 glass-card"
+                className="absolute -bottom-8 -right-8 bg-blue-500 rounded-full p-3 glass-card"
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
               >
                 <Heart className="w-6 h-6 text-white" />
+              </motion.div>
+
+              {/* Info Card */}
+              <motion.div
+                className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 glass-card rounded-2xl p-4 text-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1 }}
+              >
+                <p className="text-gray-700 font-medium">
+                  Real-time Blood Monitoring
+                </p>
+                <p className="text-sm text-gray-500">
+                  Advanced tracking system
+                </p>
               </motion.div>
             </div>
           </motion.div>
